@@ -1,0 +1,20 @@
+# Changes here will be overwritten by Copier; NEVER EDIT MANUALLY
+_commit: v4.5.0
+_src_path: https://github.com/jupyterlab/extension-template
+author_email: ms.neerajkrishna@gmail.com
+author_name: neeraj
+create_claude_symlink: true
+create_gemini_symlink: true
+has_ai_rules: true
+has_binder: false
+has_settings: false
+kind: frontend
+labextension_name: jupyter-agent-out-cell
+project_short_description: A JupyterLab extension that adds metadata to a markdown
+    cell to differentiate it from a regular markdown cell. It's use is in one of the
+    bigger projects that provide an interface to interact with agents. This cell will
+    be used to represent agent output
+python_name: jupyter_agent_out_cell
+repository: https://github.com/wingedrasengan927/jupyter-agent-out-cell
+test: false
+
