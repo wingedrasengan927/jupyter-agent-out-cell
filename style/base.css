@@ -1,5 +1,29 @@
-/*
-    See the JupyterLab Developer Guide for useful CSS Patterns:
+:root {
+  --jp-jupyter-agent-out-cell-border-color: #b388ff;
+}
 
-    https://jupyterlab.readthedocs.io/en/stable/developer/css.html
-*/
+.jp-Notebook .jp-Cell.jp-jupyter-agent-out-cell {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.jp-Notebook .jp-Cell.jp-jupyter-agent-out-cell .jp-InputArea {
+  overflow: visible;
+}
+
+.jp-Notebook .jp-Cell.jp-jupyter-agent-out-cell .jp-MarkdownOutput,
+.jp-Notebook .jp-Cell.jp-jupyter-agent-out-cell .jp-InputArea-editor,
+.jp-Notebook.jp-mod-editMode
+  .jp-Cell.jp-mod-active.jp-jupyter-agent-out-cell
+  .jp-InputArea-editor {
+  flex: 1 1 0;
+  width: auto;
+  min-width: 0;
+  margin-left: calc((100% - var(--jp-cell-prompt-width)) * 0.15);
+  border-top: none;
+  border-right: none;
+  border-bottom: none;
+  border-left: 4px solid var(--jp-jupyter-agent-out-cell-border-color);
+  border-bottom-left-radius: 6px;
+  box-shadow: 0 4px 6px -2px rgb(0 0 0 / 20%);
+}
